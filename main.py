@@ -1,3 +1,6 @@
+import math
+
+
 # Class to define point
 class Point:
 
@@ -12,3 +15,7 @@ class Point:
             return True
         else:
             return False
+
+    # Method, that counts distance from current coordinates to any other point
+    def distance_from_point(self, point):
+        return math.sqrt(math.pow(self.x - point.x, 2) + math.pow(self.y - point.y, 2))
